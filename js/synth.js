@@ -64,7 +64,7 @@ keys[220] = 80;
 */
 
 //Lower row: zsxdcvgbhnjm...
-keys[16] = 41; // = F2
+// keys[16] = 41; // = F2
 keys[65] = 42;
 keys[90] = 43;
 keys[83] = 44;
@@ -414,8 +414,9 @@ function onUpdateFilterEnvR( ev ) {
 }
 
 function onUpdateDrive( value ) {
-	currentDrive = value;
-    waveshaper.setDrive( 0.01 + (currentDrive*currentDrive/500.0) );
+	//currentDrive = value;
+//     waveshaper.setDrive( 0.01 + (currentDrive*currentDrive/500.0) );
+    waveshaper.setDrive(0.2027788 );
 }
 
 function onUpdateVolume( ev ) {

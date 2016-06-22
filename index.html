@@ -23,9 +23,17 @@
     <script type="text/javascript" src="js/waveshaper.js"></script>
     <script type="text/javascript" src="js/synth.js"></script>
     <script type="text/javascript" src="js/ui.js"></script>
+    
+	<!-- SIMPLE AUDIO RECORDER :: REQUIRED FILES CODE -->
+	<link rel="stylesheet" type="text/css" href="_css/recorderStyles.css"></link>
+	<script type="text/javascript" src="_js/recorder.js"></script>
+	<script type="text/javascript" src="_js/recorderSetup.js"></script>
+	<!-- endof SIMPLE AUDIO RECORDER :: REQUIRED FILES CODE -->
+    
 </head>
 
 <body>
+    <div style="">
     <div id="synthbox">
 <!--
         <div class="knobContainer" id="fControl" style="left: 10px; top: 10px;">
@@ -40,10 +48,12 @@
         </div>
         <span id="k60" class="white key"></span><span id="k62" class="white key"></span><span id="k64" class="white key"></span><span id="k65" class="white key"></span><span id="k67" class="white key"></span><span id="k69" class="white key"></span><span id="k71" class="white key"></span><span id="k72" class="white key"></span><span id="k74" class="white key"></span><span id="k76" class="white key"></span><span id="k77" class="white key"></span><span id="k79" class="white key"></span><span id="k81" class="white key"></span><span id="k83" class="white key"></span>
     </div>
+<!-- 
     <div id="githubnotice"><a href="http://github.com/cwilso/midi-synth">Fork my code on Github</a></div>
+ -->
     <div id="MIDIPlugin"></div>
 
-<!--
+<!-- 
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -57,6 +67,18 @@
   })();
 
 </script>
--->
+ -->
+
+	<!-- SIMPLE AUDIO RECORDER :: HTML CODE -->
+	<div id="recordingControls" class="recordingButtons" style="margin:auto; width:880px;"><div class="buttonPanel" onclick="toggleRecording();" title="Recording"><img id="recordButton" class="buttonImg record off" src="_img/icon_recordingOff.png"></img></div><div class="buttonPanel"><a id="downloadLink" href="#" title="Download"><img id="downloadButton" class="buttonImg download off" src="_img/icon_download.png"></img></a></div></div>
+	<!-- endof SIMPLE AUDIO RECORDER :: HTML CODE -->
+	</div>
+	<div class="comment">midi-synth created by Chris Wilson. For more information visit <a href='https://github.com/cwilso/midi-synth' target='_blank'>github page</a>. AudioRecorder by Chris Wilson. For more information visit <a href='https://github.com/cwilso/AudioRecorder' target='_blank'>github page</a>. </div>
+	<script>
+	function ge(id) {
+		return document.getElementById(id);
+	}
+	
+	</script>
 </body>
 </html>

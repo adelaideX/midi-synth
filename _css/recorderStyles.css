@@ -1,0 +1,68 @@
+/* Recording Controls :: Container */
+.recordingButtons {
+	display: inline-block;
+	border:0px solid #bbbbbb;
+	background-color:#000000;
+	border:3px solid #cccccc;
+	border-radius: 16px;
+	padding: 2px 6px 2px 6px;
+	font: 0px;
+	outline: 0;
+}
+
+/* Recording Controls :: Button Panels */
+.buttonPanel {
+	display: inline-block;
+	border:0px solid #aaaaaa;
+	margin: 0px;
+}
+
+/* Recording Controls :: Button Images */
+.buttonImg {
+	width: 64px;
+	height: 64px;
+	margin: 2px;	
+}
+.buttonImg.record.off {
+	cursor: pointer;
+}
+.buttonImg.record.on {
+	cursor: pointer;
+}
+
+.buttonImg.download.off {
+	cursor: not-allowed;
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity=50); 
+}	
+.buttonImg.download.on {
+	cursor: pointer;
+	opacity: 1.0;
+	-moz-opacity: 1.0;
+	filter: alpha(opacity=100); 
+}	
+.comment {
+	height: 14px;
+	font: 12px Arial;
+	color: #cccccc;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	background-color: #000000;
+	border: 3px solid #cccccc;
+	border-radius: 16px;
+	padding: 2px 6px 2px 6px;
+	font: 0px;
+	outline: 0;
+	margin: auto; 
+	margin-top: 4px;
+	width: 880px;
+}
+.comment a, .comment a:visited {
+	color: red;
+}
+
+select, option {
+	font: 12px Arial !important;
+}
